@@ -1,0 +1,106 @@
+/* Objective function */
+max: +0.203045685279 xOP_1 +0.203045685279 xOP_2 +0.203045685279 xOP_3 +0.203045685279 xOP_4 +0.203045685279 xOP_5
+ +0.0683760683761 xGY_1 +0.0683760683761 xGY_2 +0.0683760683761 xGY_3 +0.0683760683761 xGY_4 +0.0683760683761 xGY_5
+ +0.402010050251 xOS_1 +0.402010050251 xOS_2 +0.402010050251 xOS_3 +0.402010050251 xOS_4 +0.402010050251 xOS_5
+ +0.304182509506 xOT_1 +0.304182509506 xOT_2 +0.304182509506 xOT_3 +0.304182509506 xOT_4 +0.304182509506 xOT_5
+ +0.0423280423281 xGS_1 +0.0423280423281 xGS_2 +0.0423280423281 xGS_3 +0.0423280423281 xGS_4 +0.0423280423281 xGS_5;
+
+/* Constraints */
+TotalOR_1: +xOP_1 +xGY_1 +xOS_1 +xOT_1 +xGS_1 <= 10;
+TotalOR_2: +xOP_2 +xGY_2 +xOS_2 +xOT_2 +xGS_2 <= 10;
+TotalOR_3: +xOP_3 +xGY_3 +xOS_3 +xOT_3 +xGS_3 <= 10;
+TotalOR_4: +xOP_4 +xGY_4 +xOS_4 +xOT_4 +xGS_4 <= 10;
+TotalOR_5: +xOP_5 +xGY_5 +xOS_5 +xOT_5 +xGS_5 <= 10;
+Teams_OP_1: +xOP_1 <= 2;
+Teams_OP_2: +xOP_2 <= 2;
+Teams_OP_3: +xOP_3 <= 2;
+Teams_OP_4: +xOP_4 <= 2;
+Teams_OP_5: +xOP_5 <= 2;
+Teams_GY_1: +xGY_1 <= 3;
+Teams_GY_2: +xGY_2 <= 3;
+Teams_GY_3: +xGY_3 <= 3;
+Teams_GY_4: +xGY_4 <= 3;
+Teams_GY_5: +xGY_5 <= 3;
+Teams_OS_1: +xOS_1 <= 0;
+Teams_OS_2: +xOS_2 <= 1;
+Teams_OS_3: +xOS_3 <= 0;
+Teams_OS_4: +xOS_4 <= 1;
+Teams_OS_5: +xOS_5 <= 0;
+Teams_OT_1: +xOT_1 <= 1;
+Teams_OT_2: +xOT_2 <= 1;
+Teams_OT_3: +xOT_3 <= 1;
+Teams_OT_4: +xOT_4 <= 1;
+Teams_OT_5: +xOT_5 <= 1;
+Teams_GS_1: +xGS_1 <= 6;
+Teams_GS_2: +xGS_2 <= 6;
+Teams_GS_3: +xGS_3 <= 6;
+Teams_GS_4: +xGS_4 <= 6;
+Teams_GS_5: +xGS_5 <= 6;
+Dep_min_OP_1: +xOP_1 >= 0;
+Dep_min_OP_2: +xOP_2 >= 0;
+Dep_min_OP_3: +xOP_3 >= 0;
+Dep_min_OP_4: +xOP_4 >= 0;
+Dep_min_OP_5: +xOP_5 >= 0;
+Dep_min_GY_1: +xGY_1 >= 0;
+Dep_min_GY_2: +xGY_2 >= 0;
+Dep_min_GY_3: +xGY_3 >= 0;
+Dep_min_GY_4: +xGY_4 >= 0;
+Dep_min_GY_5: +xGY_5 >= 0;
+Dep_min_OS_1: +xOS_1 >= 0;
+Dep_min_OS_2: +xOS_2 >= 0;
+Dep_min_OS_3: +xOS_3 >= 0;
+Dep_min_OS_4: +xOS_4 >= 0;
+Dep_min_OS_5: +xOS_5 >= 0;
+Dep_min_OT_1: +xOT_1 >= 0;
+Dep_min_OT_2: +xOT_2 >= 0;
+Dep_min_OT_3: +xOT_3 >= 0;
+Dep_min_OT_4: +xOT_4 >= 0;
+Dep_min_OT_5: +xOT_5 >= 0;
+Dep_min_GS_1: +xGS_1 >= 0;
+Dep_min_GS_2: +xGS_2 >= 0;
+Dep_min_GS_3: +xGS_3 >= 0;
+Dep_min_GS_4: +xGS_4 >= 0;
+Dep_min_GS_5: +xGS_5 >= 0;
+Dep_max_OP_1: +xOP_1 <= 2;
+Dep_max_OP_2: +xOP_2 <= 2;
+Dep_max_OP_3: +xOP_3 <= 2;
+Dep_max_OP_4: +xOP_4 <= 2;
+Dep_max_OP_5: +xOP_5 <= 2;
+Dep_max_GY_1: +xGY_1 <= 3;
+Dep_max_GY_2: +xGY_2 <= 3;
+Dep_max_GY_3: +xGY_3 <= 3;
+Dep_max_GY_4: +xGY_4 <= 3;
+Dep_max_GY_5: +xGY_5 <= 3;
+Dep_max_OS_1: +xOS_1 <= 1;
+Dep_max_OS_2: +xOS_2 <= 1;
+Dep_max_OS_3: +xOS_3 <= 1;
+Dep_max_OS_4: +xOS_4 <= 1;
+Dep_max_OS_5: +xOS_5 <= 1;
+Dep_max_OT_1: +xOT_1 <= 1;
+Dep_max_OT_2: +xOT_2 <= 1;
+Dep_max_OT_3: +xOT_3 <= 1;
+Dep_max_OT_4: +xOT_4 <= 1;
+Dep_max_OT_5: +xOT_5 <= 1;
+Dep_max_GS_1: +xGS_1 <= 6;
+Dep_max_GS_2: +xGS_2 <= 6;
+Dep_max_GS_3: +xGS_3 <= 6;
+Dep_max_GS_4: +xGS_4 <= 6;
+Dep_max_GS_5: +xGS_5 <= 6;
+Dep_week_min_OP: +xOP_1 +xOP_2 +xOP_3 +xOP_4 +xOP_5 >= 3;
+Dep_week_min_GY: +xGY_1 +xGY_2 +xGY_3 +xGY_4 +xGY_5 >= 12;
+Dep_week_min_OS: +xOS_1 +xOS_2 +xOS_3 +xOS_4 +xOS_5 >= 2;
+Dep_week_min_OT: +xOT_1 +xOT_2 +xOT_3 +xOT_4 +xOT_5 >= 2;
+Dep_week_min_GS: +xGS_1 +xGS_2 +xGS_3 +xGS_4 +xGS_5 >= 18;
+Dep_week_max_OP: +xOP_1 +xOP_2 +xOP_3 +xOP_4 +xOP_5 <= 6;
+Dep_week_max_GY: +xGY_1 +xGY_2 +xGY_3 +xGY_4 +xGY_5 <= 18;
+Dep_week_max_OS: +xOS_1 +xOS_2 +xOS_3 +xOS_4 +xOS_5 <= 3;
+Dep_week_max_OT: +xOT_1 +xOT_2 +xOT_3 +xOT_4 +xOT_5 <= 4;
+Dep_week_max_GS: +xGS_1 +xGS_2 +xGS_3 +xGS_4 +xGS_5 <= 25;
+Max_target_OP: +8 xOP_1 +8 xOP_2 +8 xOP_3 +8 xOP_4 +8 xOP_5 <= 39.4;
+Max_target_GY: +8 xGY_1 +8 xGY_2 +8 xGY_3 +8 xGY_4 +8 xGY_5 <= 117;
+Max_target_OS: +8 xOS_1 +8 xOS_2 +8 xOS_3 +8 xOS_4 +8 xOS_5 <= 19.9;
+Max_target_OT: +8 xOT_1 +8 xOT_2 +8 xOT_3 +8 xOT_4 +8 xOT_5 <= 26.3;
+Max_target_GS: +8 xGS_1 +8 xGS_2 +8 xGS_3 +8 xGS_4 +8 xGS_5 <= 189;
+
+/* Integer definitions */
+int xOP_1,xOP_2,xOP_3,xOP_4,xOP_5,xGY_1,xGY_2,xGY_3,xGY_4,xGY_5,xOS_1,xOS_2,xOS_3,xOS_4,xOS_5,xOT_1,xOT_2,xOT_3,xOT_4,xOT_5,xGS_1,xGS_2,xGS_3,xGS_4,xGS_5;
